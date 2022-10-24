@@ -1,4 +1,6 @@
-# create table livro(
+#bd_biblioteca 
+
+create table livro(
 id_livro int not null auto_increment,
 nome varchar(50),
 palavra_chave varchar(50),
