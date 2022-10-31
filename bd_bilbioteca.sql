@@ -54,16 +54,20 @@ alter table livro add constraint fk_livro foreign key (cod_editora) references e
 insert into usuario(nome, telefone, endereco)values
 ('Andre','119836399472','Rua Meneiro Alves');
 
-insert into emprestimo(data_emprestimo, data_devolucao)values
-('2022-09-21','2023-10-21');
+insert into emprestimo(cod_usuario, cod_livro, data_emprestimo, data_devolucao)values
+('1','1','2022-09-21','2023-10-21');
 
-insert into livro(nome, descricao)values
-('Freddy Krueger','Freddy Krueger é um personagem. Freddy é um assassino de crianças da fictícia Springwood');
+insert into livro(cod_editora, nome, descricao, palavra_chave)values
+('1','Freddy Krueger','Freddy Krueger é um personagem. Freddy é um assassino de crianças da fictícia Springwood','terror');
 
-insert into editora(nome, telefone, endereco)values
-('Editora JBR','11985369836','Avenida São Paulo');
+insert into editora(cod_autor, cod_livro, nome, telefone, endereco)values
+('1','1','Editora JBR','11985369836','Avenida São Paulo');
 
 insert into autor(nome, telefone, endereco)values
 ('José Augusto','83924766374','Rua Comendador Castilho');
 
-
+select * from usuario;
+select * from emprestimo;
+select * from livro;
+select * from editora;
+select * from autor;
