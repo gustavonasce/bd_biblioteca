@@ -51,3 +51,19 @@ alter table editora add constraint fk_editora foreign key (cod_autor) references
 alter table editora add constraint gk_editora foreign key (cod_livro) references autor(id_autor);
 alter table livro add constraint fk_livro foreign key (cod_editora) references editora(id_editora);
 
+insert into usuario(nome, telefone, endereco)values
+('Andre','119836399472','Rua Meneiro Alves');
+
+insert into emprestimo(data_emprestimo, data_devolucao)values
+('2022-09-21','2023-10-21');
+
+insert into livro(nome, descricao)values
+('Freddy Krueger','Freddy Krueger é um personagem. Freddy é um assassino de crianças da fictícia Springwood');
+
+insert into editora(nome, telefone, endereco)values
+('Editora JBR','11985369836','Avenida São Paulo');
+
+insert into autor(nome, telefone, endereco)values
+('José Augusto','83924766374','Rua Comendador Castilho');
+
+
